@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 env:
-  CUSTOM_IMAGE_NAME: custom
+  CUSTOM_IMAGE_NAME: pdc
   BUILDX_NO_DEFAULT_ATTESTATIONS: 1
 
 jobs:
