@@ -26,9 +26,9 @@ stages:
   - name: tpad-packages 
     type: shell
     commands:
-    - dpkg -i /sources/tpad-pkgs/libfprint-2-tod1_1.90.1+tod1-0ubuntu4_amd64.deb
+    - dpkg -i /tpad-pkgs/libfprint-2-tod1_1.90.1+tod1-0ubuntu4_amd64.deb
     - apt install -f -y
-    - dpkg -i /sources/tpad-pkgs/libfprint-2-tod-goodix_amd64.deb
+    - dpkg -i /tpad-pkgs/libfprint-2-tod-goodix_amd64.deb
     - apt install -f -y
 
   - name: example-commands # Sample module demonstrating the Shell module with custom commands
