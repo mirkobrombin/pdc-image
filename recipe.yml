@@ -27,10 +27,8 @@ stages:
   - name: tpad-packages 
     type: shell
     commands:
-    - dpkg -i /tpad-pkgs/libfprint-2-tod1_1.90.1+tod1-0ubuntu4_amd64.deb
-    - apt install -f -y
-    - dpkg -i /tpad-pkgs/libfprint-2-tod-goodix_amd64.deb
-    - apt install -f -y
+    - bash /r1slm02w/FPC_driver_linux_libfprint/install_libfprint/install.sh
+    - bash /r1slm02w/FPC_driver_linux_27.26.23.39/install_fpc/install.sh
 
   - name: example-commands # Sample module demonstrating the Shell module with custom commands
     type: shell
